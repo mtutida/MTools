@@ -1,0 +1,28 @@
+name: trusted-build-validation
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate metadata and source
+        shell: pwsh
+        run: |
+          Write-Host 'TRUSTED_BUILD_VALIDATION=true'
+          Write-Host 'SIGNING=false'
+          Write-Host 'PROMOTION=false'
+          Get-ChildItem -Recurse -File | Sort-Object FullName | ForEach-Object { Write-Host $_.FullName }
+      - name: Confirm no signing or promotion credentials
+        shell: pwsh
+        run: |
+          if ($env:SIGNING_CERTIFICATE -or $env:SIGNPATH_TOKEN) { throw 'Signing credentials must not be present in validation workflow' }
+          Write-Host 'CREDENTIALS_PRESENT=false'
