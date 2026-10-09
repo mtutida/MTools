@@ -1,0 +1,197 @@
+MTools CompactMe - Windows build
+=================================================
+
+Build mode
+----------
+This package is configured for PyInstaller ONEDIR output.
+The expected result is:
+
+    dist\CompactMe\CompactMe.exe
+
+Keep and distribute the whole folder:
+
+    dist\CompactMe\
+
+Do not copy only CompactMe.exe, because the onedir build depends on files in
+_internal.
+
+Recommended build environment
+-----------------------------
+Use the Python virtual environment in the CompactMe workspace. The build script
+now refuses to build if PySide6 is not available in the selected Python, because
+that creates a broken EXE with:
+
+    ModuleNotFoundError: No module named 'PySide6'
+
+Recommended commands:
+
+    cd /d "%USERPROFILE%\Documents\Codex\MTCompactMe"
+    .venv\Scripts\activate
+    clean_build.bat
+    build_windows.bat
+
+The script prioritizes Python in this order:
+
+  1. COMPACTME_PYTHON environment variable, if defined
+  2. COMPRIMIDIA_PYTHON legacy alias, if defined
+  3. MEDIACOMPRESSOR_PYTHON legacy alias, if defined
+  4. currently activated VIRTUAL_ENV
+  5. local .venv\Scripts\python.exe next to this package
+  6. parent .venv next to the source folder
+  7. python from PATH
+  8. py -3
+
+To force the exact development Python:
+
+    set "COMPACTME_PYTHON=%USERPROFILE%\Documents\Codex\MTCompactMe\.venv\Scripts\python.exe"
+    build_windows.bat
+
+Pre-build validation
+--------------------
+In the same terminal used for the build, these commands should pass:
+
+    python -m PyInstaller --version
+    python -c "import PySide6; print(PySide6.__version__)"
+    python -c "from PySide6.QtWidgets import QApplication; print('PySide6 OK')"
+
+FFmpeg packaging and build size
+-------------------------------
+For compression to work without relying on system PATH, place ffmpeg.exe and
+ffprobe.exe in one of these folders before building:
+
+    bin\
+    tools\
+    ffmpeg\
+    ffmpeg\bin\
+
+Recommended layout:
+
+    bin\ffmpeg.exe
+    bin\ffprobe.exe
+
+The build spec packages only these two executable files, never the whole FFmpeg
+folder. However, some FFmpeg distributions provide very large static binaries;
+for example, ffmpeg.exe + ffprobe.exe can exceed 400 MB. In that case the large
+folder in dist\CompactMe\_internal is expected and comes from the FFmpeg
+binaries themselves.
+
+To generate a smaller build without embedding FFmpeg, run:
+
+    build_windows_external_ffmpeg.bat
+
+or set this variable before building:
+
+    set COMPACTME_EMBED_FFMPEG=0
+    build_windows.bat
+
+When FFmpeg is not embedded, put ffmpeg.exe and ffprobe.exe beside the built app
+after the build, preferably here:
+
+    dist\CompactMe\bin\ffmpeg.exe
+    dist\CompactMe\bin\ffprobe.exe
+
+Alternatively, keep both available in the system PATH.
+
+To inspect the size of the generated dist folder, run:
+
+    analyze_dist_size.bat
+
+SSL/certificate fallback for pip
+--------------------------------
+If dependency installation fails with CERTIFICATE_VERIFY_FAILED, first try:
+
+    python -m pip install --upgrade pip certifi
+    build_windows.bat
+
+If your network/proxy blocks certificate validation and you accept the risk, run:
+
+    install_build_deps_trusted_host.bat
+    build_windows.bat
+
+Admin terminal warning
+----------------------
+PyInstaller warns that running as administrator is unnecessary and will be
+blocked in PyInstaller 7. Prefer a normal non-admin terminal.
+
+
+Metadados do EXE
+----------------
+O CompactMe.spec usa version_info.txt para gravar VERSIONINFO no executável
+gerado pelo PyInstaller. Isso evita que o Windows mostre uma versão herdada ou
+genérica nas propriedades do EXE.
+
+rc380 - Validação de FFmpeg/FFprobe antes do build
+--------------------------------------------------
+Antes de chamar o PyInstaller, build_windows.bat executa:
+
+    validate_ffmpeg_binaries.bat
+
+Para builds padrão, o script exige ffmpeg.exe e ffprobe.exe em uma das pastas suportadas:
+
+    bin\
+    tools\
+    ffmpeg\
+    ffmpeg\bin\
+
+O script mostra tamanho e prefixo SHA256 dos binários selecionados. Para testar builds menores, substitua os arquivos na pasta bin\ e rode:
+
+    clean_build.bat
+    build_windows.bat
+    analyze_dist_size.bat
+    analyze_media_binary_size.bat
+    build_installer_nsis.bat
+
+Para build sem FFmpeg embutido, use explicitamente:
+
+    build_windows_external_ffmpeg.bat
+
+Nesse modo, ffmpeg.exe e ffprobe.exe precisam existir no ambiente de runtime/usuário.
+
+
+Historical release notes
+------------------------
+The notes below describe changes made in historical CompriMidia releases.
+They are retained as history and do not describe the current product identity.
+
+rc380 - Validação de capacidades FFmpeg
+--------------------------------------
+O build passa a executar validate_ffmpeg_capabilities.bat depois da checagem de presença/tamanho/hash dos binários.
+
+Esta validação confirma codecs, muxers, filtros e protocolo local necessários pelos perfis atuais antes do empacotamento PyInstaller.
+
+Uso manual:
+
+    validate_ffmpeg_capabilities.bat
+
+Bypass temporário somente para testes:
+
+    set COMPACTME_SKIP_FFMPEG_CAPABILITY_CHECK=1
+    build_windows.bat
+
+
+rc383 - Correção da validação de versão FFmpeg
+- validate_ffmpeg_capabilities.ps1 não usa mais -hide_banner junto com -version.
+- Mantém -hide_banner apenas nas consultas de capacidades (-encoders, -muxers, -filters, -protocols).
+- Corrige falso erro em builds FFmpeg que retornam exit code 1 para -hide_banner -version.
+
+
+rc385 - Correção definitiva do bug de argumentos na validação opcional FFmpeg
+- validate_ffmpeg_capabilities.ps1 deixou de usar ProcessStartInfo.ArgumentList.
+- A validação opcional agora usa Arguments string compatível com Windows PowerShell 5.1.
+- build normal continua sem bloquear por capability gate.
+
+
+rc386 - Correção da detecção opcional dos filtros FFmpeg
+- rc387 - Detecção direta dos filtros FFmpeg por help dedicado
+----------------------------------------------------------
+- validate_ffmpeg_capabilities.ps1 não depende mais apenas do parse de ffmpeg -filters para scale/fps.
+- A checagem opcional agora consulta diretamente ffmpeg -h filter=scale e ffmpeg -h filter=fps.
+- Corrige falso negativo onde os filtros existiam, mas eram marcados como ausentes.
+- build normal continua sem bloquear por capability gate opcional.
+
+- rc388 - Normalização visual de separadores no diálogo de criação da pasta de destino.
+
+- rc389 - Suporte a abertura/importação inicial de arquivos via Windows Explorer/Abrir com.
+- rc390 - Correção da resolução do Python/venv no build_windows.bat.
+- rc391 - Sincronização dos metadados de versão do instalador NSIS.
+- rc392 - Normalização visual da pasta de saída nas preferências usando separador nativo do Windows.

@@ -1,0 +1,852 @@
+[
+  {
+    "path": ".gitignore",
+    "size": 142,
+    "sha256": "634CDA77B7785A7698B6557A4F6768AFD44BF9D06612CFA2F62DD9880905CAD3"
+  },
+  {
+    "path": "build_installer_nsis.bat",
+    "size": 2509,
+    "sha256": "57D2D42BB376BF40C7F49770809391CC75C422A9E5D630E10A9CC211DBB33826"
+  },
+  {
+    "path": "build_windows_external_ffmpeg.bat",
+    "size": 141,
+    "sha256": "793420B8F096BBAF7AC6152B492C57B46A13E6DE76D8D9BDCEFFEFD931FD356D"
+  },
+  {
+    "path": "build_windows.bat",
+    "size": 6281,
+    "sha256": "872AAC8817E078072149A21908BB2576345E9F1B9A390D1D5AF4A7A8436A8631"
+  },
+  {
+    "path": "BUILD_WINDOWS.txt",
+    "size": 6891,
+    "sha256": "1A7180DA56A8B26ED78435A930EA9AC6D57EF650A39FAEC34F0DDB4BDA99ABF3"
+  },
+  {
+    "path": "clean_build.bat",
+    "size": 282,
+    "sha256": "068FA183BC66DBC61AD501E9BBC51181B0DCE66CD192186D35ABEDE950AD828A"
+  },
+  {
+    "path": "CompactMe.nsi",
+    "size": 12128,
+    "sha256": "BEFC93D3B7CEB2042BCA6976553212AA0270FD96468EF7A3FCC1E8EE8780B1D0"
+  },
+  {
+    "path": "CompactMe.spec",
+    "size": 5755,
+    "sha256": "C529D307100CA4088B76012FDE3E25AB1FE3306BE2F8C693F5DABF4F9FB3AF78"
+  },
+  {
+    "path": "config.json",
+    "size": 489,
+    "sha256": "571FF56067CFB4681A635F4A6FD84A1E97821E5F0EE3B3C59D00818C22E79D3C"
+  },
+  {
+    "path": "requirements-build.txt",
+    "size": 18,
+    "sha256": "9D2B1029175A4C20BAA42C8637B2701FA9D6F621D8F3FBE6064C98F9DA58B03C"
+  },
+  {
+    "path": "requirements.txt",
+    "size": 85,
+    "sha256": "E1AABD12058C030C6AAE3D1FDD2F0A9D5988C4FFDEEA039DEFD70F4EA5597706"
+  },
+  {
+    "path": "version_info.txt",
+    "size": 1152,
+    "sha256": "73E9C2173618844424052D86755E957E3666A5F2262787DE758F6585A4624A53"
+  },
+  {
+    "path": "app\\__main__.py",
+    "size": 71,
+    "sha256": "D3A5556933277329D61A683E59F08A40EA6253E111D32C739EF0FB8D3EED3444"
+  },
+  {
+    "path": "app\\app_metadata.py",
+    "size": 93,
+    "sha256": "5051B5D33855AF25E346DF38A358D997C90591BC6011070C3F54F2B6FA0D7A96"
+  },
+  {
+    "path": "app\\application_context.py",
+    "size": 355,
+    "sha256": "91E97B4CE0E0E0CD855B08BAFD087CAD905CB7FB76781CFC7E7DEFE933604198"
+  },
+  {
+    "path": "app\\main.py",
+    "size": 6267,
+    "sha256": "2BBC9F6F5E8E4F9ACDF0020E363084098713008391BDC4200C38E03E2F9FA985"
+  },
+  {
+    "path": "app\\ancillary\\configuration.py",
+    "size": 3697,
+    "sha256": "306CA8F644E0E32A6F8CEA161264F013FCCA082DAECB540152FB8B297D20FEB5"
+  },
+  {
+    "path": "app\\ancillary\\logging_service.py",
+    "size": 7183,
+    "sha256": "2A27DD3B4A225F5101C103D55B6CD204D88369A969BB8A590C6956AD5B264EF4"
+  },
+  {
+    "path": "app\\ancillary\\__pycache__\\configuration.cpython-311.pyc",
+    "size": 6279,
+    "sha256": "86AB5EE9AEE08D00459A610E6EB7D387A41F5EC68501ACED251A5C256E4968D7"
+  },
+  {
+    "path": "app\\ancillary\\__pycache__\\logging_service.cpython-311.pyc",
+    "size": 11236,
+    "sha256": "3F94329F8858C8667CD8353C99633212AD59A30DACAD9CF9C8538F059802A35C"
+  },
+  {
+    "path": "app\\core\\app_version.py",
+    "size": 552,
+    "sha256": "699664FCEA607061F7F319A1433DEA9231FA2C279F55AF44F483C649250D6839"
+  },
+  {
+    "path": "app\\core\\automatic_profile.py",
+    "size": 49691,
+    "sha256": "B98F00CA23B5789C77D84F61FBDE3570FFE7C0F54899F191BEA8D1CEB016707D"
+  },
+  {
+    "path": "app\\core\\compression_profiles.py",
+    "size": 69507,
+    "sha256": "ACAD7788E11BBE9F683FC2E5C37F3B31DB117E4ED5F9CFF66F9875E45AD02029"
+  },
+  {
+    "path": "app\\core\\ffmpeg_binaries.py",
+    "size": 2171,
+    "sha256": "639CC2DB596E6EDD7BB023B3AD9D61B2775E4F8F8A615F0FD26097C9F6062294"
+  },
+  {
+    "path": "app\\core\\ffmpeg_engine.py",
+    "size": 11315,
+    "sha256": "2FE979AAC5E319E6FFBEEB2E3AB12AEEB12E83F545B2F6B1FFC96548F343FC54"
+  },
+  {
+    "path": "app\\core\\formatting.py",
+    "size": 4065,
+    "sha256": "FA7F1510A69C43C6B37CAF1B9836C0468E352063693C3826768BFA8D7CD06AFA"
+  },
+  {
+    "path": "app\\core\\output_naming.py",
+    "size": 4917,
+    "sha256": "42C721F3EA9A6A7B52E12CDA08DDECA6107633901A646E46E2E12B747E4925D7"
+  },
+  {
+    "path": "app\\core\\paths.py",
+    "size": 1245,
+    "sha256": "76CE6A99417D507CCEB7F256D0E298F3BA155FE2BEA2E3B79F7F024F83AAECDD"
+  },
+  {
+    "path": "app\\core\\subprocess_utils.py",
+    "size": 2086,
+    "sha256": "CAA1DA20C17F35C2B8BF11E835D5AF8A208A9109BE003C025363609B027FD4E3"
+  },
+  {
+    "path": "app\\core\\user_data_migration.py",
+    "size": 7364,
+    "sha256": "2A222F40340A0BFCCFDE09B867D5134A67241A86B845DAFB8A194E519AC5A323"
+  },
+  {
+    "path": "app\\core\\profiles\\advanced.py",
+    "size": 15465,
+    "sha256": "55E1592F06199317C3238A4AF75685F9A90AFBBBC0DD9685F2E9FDBC1AAFC984"
+  },
+  {
+    "path": "app\\core\\profiles\\audio.py",
+    "size": 19418,
+    "sha256": "82E4FDE22AAE681895CCA1053B5547F2FE77E9EBDB1D34CE89FD5C4F52892F58"
+  },
+  {
+    "path": "app\\core\\profiles\\common.py",
+    "size": 630,
+    "sha256": "0A58F22EFB3D9F8B8D5C6843FC4DBB54AC757A7E1A9031EAE0F8B1E52503EE81"
+  },
+  {
+    "path": "app\\core\\profiles\\quick.py",
+    "size": 9443,
+    "sha256": "33EB036EBC4648CB454E6BAAB51AD6B4CCCBA5B71C6598877B3743B9B2D60B19"
+  },
+  {
+    "path": "app\\core\\profiles\\strategic.py",
+    "size": 10850,
+    "sha256": "F89873B4DCC2780CAEE2697AF908436C87FBA41D361A29E706EF2E6DDE70B765"
+  },
+  {
+    "path": "app\\core\\profiles\\__pycache__\\advanced.cpython-311.pyc",
+    "size": 21158,
+    "sha256": "69A96C43E0DE987E986C6185CA89A45605144E6EFCDB814653C847C3C1434D6F"
+  },
+  {
+    "path": "app\\core\\profiles\\__pycache__\\audio.cpython-311.pyc",
+    "size": 25210,
+    "sha256": "BF78978C046FE59F95D810ED07366F091442B4E30BFAF753EE2D69FC3B577A67"
+  },
+  {
+    "path": "app\\core\\profiles\\__pycache__\\common.cpython-311.pyc",
+    "size": 1339,
+    "sha256": "B7EA3AA9230F71408A0491DD9E8CB91299E13FE66150B603A6A5BD018DA93233"
+  },
+  {
+    "path": "app\\core\\profiles\\__pycache__\\quick.cpython-311.pyc",
+    "size": 12780,
+    "sha256": "C28A66825EE01218CD299B6304A925E190077589B56C2F77584D6158E326CE01"
+  },
+  {
+    "path": "app\\core\\profiles\\__pycache__\\strategic.cpython-311.pyc",
+    "size": 14847,
+    "sha256": "8607EC9B3E33959EC4B496E2F9580C7FD9B7897026048107F550708C13F84236"
+  },
+  {
+    "path": "app\\core\\__pycache__\\app_version.cpython-311.pyc",
+    "size": 901,
+    "sha256": "677C6022E79ACF99A796304F1D809A2F550D4FFFD3A1FABB1953A6AD247BFF80"
+  },
+  {
+    "path": "app\\core\\__pycache__\\automatic_profile.cpython-311.pyc",
+    "size": 53894,
+    "sha256": "243DF841181D3266BB5FBC1EBE5CF67D54281A7A002B2C4AF9C61D3CC101B6B6"
+  },
+  {
+    "path": "app\\core\\__pycache__\\compression_profiles.cpython-311.pyc",
+    "size": 81624,
+    "sha256": "EF7C3D055159C08275A7C13463E42D5FEE37789F0C578CD7E245AC7460E39DDF"
+  },
+  {
+    "path": "app\\core\\__pycache__\\ffmpeg_binaries.cpython-311.pyc",
+    "size": 4375,
+    "sha256": "1D4616F53C5DECF9FD0FAC0B847AF152EF8F50ED3ABCBE8DD5B3A50ACFF3FAA0"
+  },
+  {
+    "path": "app\\core\\__pycache__\\ffmpeg_engine.cpython-311.pyc",
+    "size": 15035,
+    "sha256": "E6594D32D8AD53462757A58DDFC7770C0C5BD6EC4CAF016A448B77C8FBED33BD"
+  },
+  {
+    "path": "app\\core\\__pycache__\\formatting.cpython-311.pyc",
+    "size": 6262,
+    "sha256": "3137AFA534F984C9F8314D8FD502055D2E443CB1DC6C9BFDA9CF4076F0CC6552"
+  },
+  {
+    "path": "app\\core\\__pycache__\\output_naming.cpython-311.pyc",
+    "size": 7185,
+    "sha256": "9AB1193BF801DA6815126394D8EA04FC463859FB21285DF1B870AF31CD9B84D1"
+  },
+  {
+    "path": "app\\core\\__pycache__\\paths.cpython-311.pyc",
+    "size": 2014,
+    "sha256": "7B4EF7F74024D159F385CFC643AC9F49A0834387EA9298C756F30138CA3C4E74"
+  },
+  {
+    "path": "app\\core\\__pycache__\\subprocess_utils.cpython-311.pyc",
+    "size": 2786,
+    "sha256": "FE0A821D04E0FA52D32CC4BA74074B4D76C0B2E5C7458CA2AD735751977A83C9"
+  },
+  {
+    "path": "app\\core\\__pycache__\\user_data_migration.cpython-311.pyc",
+    "size": 10614,
+    "sha256": "F84C3EA7DAC264551BE6B0CE5FA9525A9ADB1DBC16AECE74EF7BE3D045021696"
+  },
+  {
+    "path": "app\\engine\\cancel_token.py",
+    "size": 403,
+    "sha256": "3763A205D2E4BE5C661F93E65758353557833B1932C59A2226B0DDA647130257"
+  },
+  {
+    "path": "app\\engine\\encode_estimator.py",
+    "size": 9374,
+    "sha256": "DD439C9DD863B3D9E50B681A067537803AF8BA6E1854904938AF798B0C656924"
+  },
+  {
+    "path": "app\\engine\\ffprobe_probe.py",
+    "size": 11488,
+    "sha256": "FC80616D2FAB3FCCCBF268CB5CD178E88BA3F1A26C345FB1C62071EF646150BF"
+  },
+  {
+    "path": "app\\engine\\thumbnail_generator.py",
+    "size": 4465,
+    "sha256": "DCF3EB925DC1987C3BBE3C36F25AAFA4878EAF070C14DCDB46229CF297E193A3"
+  },
+  {
+    "path": "app\\engine\\__pycache__\\cancel_token.cpython-311.pyc",
+    "size": 1069,
+    "sha256": "AC137281EBDB6E60C17BC55A15437348FE4F7027B98FAEDB8AB840AC61FC9D35"
+  },
+  {
+    "path": "app\\engine\\__pycache__\\encode_estimator.cpython-311.pyc",
+    "size": 14231,
+    "sha256": "CFB4D7E5892AD37985974C837A5D90836121446B60BFE5C54D7965E65026D120"
+  },
+  {
+    "path": "app\\engine\\__pycache__\\ffprobe_probe.cpython-311.pyc",
+    "size": 16230,
+    "sha256": "7F1885444B4E22EF66DA9ED032290897A9EF6548B73832BFBEA6EDCD4E87B422"
+  },
+  {
+    "path": "app\\engine\\__pycache__\\thumbnail_generator.cpython-311.pyc",
+    "size": 6270,
+    "sha256": "16186A445A7A2B8B25FD5C5FD7D3EC85EDABE3487A5EA9C65AE60F0B5025B23C"
+  },
+  {
+    "path": "app\\interaction_model\\contracts.py",
+    "size": 259,
+    "sha256": "12038B3A865EF11CAA25A6509D8B0F1591347EF5AE73FE1BDF4714E10C25158D"
+  },
+  {
+    "path": "app\\interaction_model\\event_bridge.py",
+    "size": 3738,
+    "sha256": "9C3C588B11E95F0A6C20AB902A6A53D55132503107BC4875349F043535A5CB50"
+  },
+  {
+    "path": "app\\interaction_model\\execution_controller.py",
+    "size": 5476,
+    "sha256": "6E9C16118C34B51E65313220706DC52E4EA61D9D10466BF4B8B8A5C38C60FC25"
+  },
+  {
+    "path": "app\\interaction_model\\job_state.py",
+    "size": 1505,
+    "sha256": "DC6926508E4A80F306F3E03BBDEBAC20C4E13F167F07EDFD602C2B145114E4BD"
+  },
+  {
+    "path": "app\\interaction_model\\run_controller.py",
+    "size": 20143,
+    "sha256": "FA40812F77EBF025AA65E5F0ABE309E5969D9F5593DBBF91962ADD954A2559F3"
+  },
+  {
+    "path": "app\\interaction_model\\shutdown_controller.py",
+    "size": 297,
+    "sha256": "3F0AE34A31E8291B31CA58A147B28A575888FF489BFAC84F9D8AA32EEBFA75C5"
+  },
+  {
+    "path": "app\\interaction_model\\state_machine.py",
+    "size": 1935,
+    "sha256": "13E569EB0D40D77789220DDFC28BF412EB54A8E16C95162A4461801D5CB7323F"
+  },
+  {
+    "path": "app\\interaction_model\\__pycache__\\contracts.cpython-311.pyc",
+    "size": 1179,
+    "sha256": "54A800310CEBF2F2FA0A3D643DC73E2C61A005A8664AE8A138FC3C92BBC28B0A"
+  },
+  {
+    "path": "app\\interaction_model\\__pycache__\\event_bridge.cpython-311.pyc",
+    "size": 6845,
+    "sha256": "15176E16039104ABF67AFEB1023590D703CAD398423631E93783C42F564AF855"
+  },
+  {
+    "path": "app\\interaction_model\\__pycache__\\execution_controller.cpython-311.pyc",
+    "size": 8668,
+    "sha256": "4CD915F72DCB726CD9B1C3CDAE36BFA3CAC2A739259A566C95C3E7C30A8D26F7"
+  },
+  {
+    "path": "app\\interaction_model\\__pycache__\\job_state.cpython-311.pyc",
+    "size": 3215,
+    "sha256": "B8705DFE74C967717C342DFCBC2712AA40EEC8D0C434C31A2BC44F9C699C2638"
+  },
+  {
+    "path": "app\\interaction_model\\__pycache__\\run_controller.cpython-311.pyc",
+    "size": 26768,
+    "sha256": "A91EB5D5126838B941D79FB1C1F64F944CB623EF9B59EA3AFFB657DC386EF5C8"
+  },
+  {
+    "path": "app\\interaction_model\\__pycache__\\shutdown_controller.cpython-311.pyc",
+    "size": 1014,
+    "sha256": "0D1627185EB4AFC36348F8E0098E9CA5E57EFD88EA79ED9E134A94F0B1C0494A"
+  },
+  {
+    "path": "app\\interaction_model\\__pycache__\\state_machine.cpython-311.pyc",
+    "size": 4370,
+    "sha256": "7529EB527712FCED9E2082D40FAD135F608CC8D1B239000A1A5A9C7CB14089C1"
+  },
+  {
+    "path": "app\\models\\file_table_model.py",
+    "size": 3499,
+    "sha256": "9240FFF3F2FB070B8ABC43984527C23638636FF3F55356A3E8245232A7201B8F"
+  },
+  {
+    "path": "app\\models\\__pycache__\\file_table_model.cpython-311.pyc",
+    "size": 6665,
+    "sha256": "90D838D15622854220D40435CCAE78A9C3396770808B87A5BC0B2790CAE60667"
+  },
+  {
+    "path": "app\\ui\\ancillary_dialogs.py",
+    "size": 27086,
+    "sha256": "DDBBCB013D958F4E2ECCBF3AA0244F84362DB65DAC2BC2D7E075EF29FDFB8278"
+  },
+  {
+    "path": "app\\ui\\app_preferences_dialog.py",
+    "size": 27234,
+    "sha256": "A472354DB33F050BAEB63207BD6528B897377A1C9CDC2077CA59A36322F8FB82"
+  },
+  {
+    "path": "app\\ui\\app_shell.py",
+    "size": 64900,
+    "sha256": "4943047D9846083719A5F2294F25A0FF5922B860268AE7A6C38965EFD45A15F7"
+  },
+  {
+    "path": "app\\ui\\assets.py",
+    "size": 101,
+    "sha256": "C2BD913B612CE5E499B3251BBEEA7F29F1902F3E17AA5B577C36B5B83B930502"
+  },
+  {
+    "path": "app\\ui\\assisted_import_dialog.py",
+    "size": 58192,
+    "sha256": "5BBD2C3560F0A966E3401F386BE1DC9F85E68435ED10F0277D255C50791CD882"
+  },
+  {
+    "path": "app\\ui\\configuration_overlay.py",
+    "size": 17264,
+    "sha256": "F058ED1E271EAB1A6CC4F76E1C5BD8EB34825E3711A6BDF69CB0DB7FC715414A"
+  },
+  {
+    "path": "app\\ui\\configuration_panel.py",
+    "size": 426061,
+    "sha256": "86DE70F0EE8F3EAD49AB571DB2EEF5BC8D60F55D710E371481A96EEF1488C8A1"
+  },
+  {
+    "path": "app\\ui\\context_bar_widget.py",
+    "size": 11925,
+    "sha256": "18D12BD1536075923651349AAD42994E01C4612AFA4AD7C40D069EF45B75EADE"
+  },
+  {
+    "path": "app\\ui\\context_bar.py",
+    "size": 3611,
+    "sha256": "9F052F23F8A6FB57582645636B7209AD6D2A708DE60D1A57F2A698AD6A4FDE13"
+  },
+  {
+    "path": "app\\ui\\dialog_caption.py",
+    "size": 2911,
+    "sha256": "C2EBE1CC9D09184ACDB36FBD521DE34CBEC1B21684A8898C571C1DFDDA44DD4A"
+  },
+  {
+    "path": "app\\ui\\execution_footer.py",
+    "size": 3381,
+    "sha256": "D220DEE80CC5DA9FA946CD283CD7309A56A5E831816F5AA998B6D2A96B31351B"
+  },
+  {
+    "path": "app\\ui\\file_card_delegate.py",
+    "size": 58391,
+    "sha256": "953770D9030189003415C284D71BCFBAA1B3734329D96628ECA933CF5FAB2E3E"
+  },
+  {
+    "path": "app\\ui\\file_card_presenter.py",
+    "size": 19232,
+    "sha256": "59445AA7825692D4F75F9ECEEE39D2FFDB15F6FC668E4004BA42CC8EFF46ACA2"
+  },
+  {
+    "path": "app\\ui\\file_list_container.py",
+    "size": 33225,
+    "sha256": "52A8254076E3D8AD84A3C899DA24AD728B92F299337AB944BBCB206990E46F1D"
+  },
+  {
+    "path": "app\\ui\\file_list_model.py",
+    "size": 13244,
+    "sha256": "8BA16BB615FC4466BFDE8DB29E15A4A31C72F5942397F2FA10A6463981D3D0EE"
+  },
+  {
+    "path": "app\\ui\\file_list.py",
+    "size": 37586,
+    "sha256": "A44C62C4AEAAE4E489CAEAF3A8E5863134E28C57376E7B1609CEB265F92D2830"
+  },
+  {
+    "path": "app\\ui\\global_bar.py",
+    "size": 66727,
+    "sha256": "49042199E743DB50C5DF5202A2C82B9C65CBFB1204FF6B5D3FB44A2262FEA4EB"
+  },
+  {
+    "path": "app\\ui\\global_progress.py",
+    "size": 4196,
+    "sha256": "A9205A595DAF99FBB8C0A2A9A7C482CCB0137EF4938F29AFE6E9594896020B2F"
+  },
+  {
+    "path": "app\\ui\\import_batch_worker.py",
+    "size": 3130,
+    "sha256": "5101D43F36259171AC762E8DD269D0F5B6B6EE7C2CAD419393DF224DFB4076ED"
+  },
+  {
+    "path": "app\\ui\\media_preview_dialog.py",
+    "size": 43017,
+    "sha256": "19EB81BAD6CEACBB04C43F7A19C51214C0E6E396FAE6B742BBC879937F054895"
+  },
+  {
+    "path": "app\\ui\\selection_controller.py",
+    "size": 1214,
+    "sha256": "B481C01114BD1FC13143A6EAA7C6A5B8A3C3FE49B0F1C991EC6404C413CEB1A8"
+  },
+  {
+    "path": "app\\ui\\semantic_tooltip.py",
+    "size": 2440,
+    "sha256": "D1A1C1E30850D4662DEDE6F98D5FBFF3A9C74298CEB89DDD07E0C15870E8F276"
+  },
+  {
+    "path": "app\\ui\\startup_splash.py",
+    "size": 3539,
+    "sha256": "F02891CB05694F5E2D1CFBBC92F9FDC7A812DA191990498FB9683DF5C1DF21A6"
+  },
+  {
+    "path": "app\\ui\\theme_mode_controller.py",
+    "size": 16911,
+    "sha256": "3FCD29F6C10344A3EA00F21B128F9CFF327E23225B907070DC84C81151EA3B1B"
+  },
+  {
+    "path": "app\\ui\\theme_tokens.py",
+    "size": 52264,
+    "sha256": "4D8B3FD403C3AC2510A21F7C6AA7DF8DB5175C976E7EC257675F12EE8859E556"
+  },
+  {
+    "path": "app\\ui\\toast_manager.py",
+    "size": 3277,
+    "sha256": "26A771646032090C6EEE1424FDDFF6CA9CDE47828E184595FED3A1E935B8D02D"
+  },
+  {
+    "path": "app\\ui\\ui_palette.py",
+    "size": 1694,
+    "sha256": "9EB1A7DBD13B6E4D6F73594B720F48FB5351FDD26174C2414FDC266C3502CE7C"
+  },
+  {
+    "path": "app\\ui\\ui_utils.py",
+    "size": 204,
+    "sha256": "EBCFB49B3A7EB02D493F61CC543003B90C0E813E450AF84B80949F9638923201"
+  },
+  {
+    "path": "app\\ui\\window_icon.py",
+    "size": 1541,
+    "sha256": "BC20DB64D096DAFF589C2E4DCD37A274BAC0011226684D11C97BCB213FA741D0"
+  },
+  {
+    "path": "app\\ui\\icons\\compactme_icon_256.png",
+    "size": 62251,
+    "sha256": "4BD4E5A48CF57A0C0993FB9F3AB150819C1D7A7AED6EE0D54B15DF56912E2EDE"
+  },
+  {
+    "path": "app\\ui\\icons\\compactme_titlebar.ico",
+    "size": 109197,
+    "sha256": "E7885EF890441E1DDDEE5E3D537EE08F6350F51DCA6D32FC1526390F36B5A3BC"
+  },
+  {
+    "path": "app\\ui\\icons\\compactme.ico",
+    "size": 101846,
+    "sha256": "89B8FA574855071DE9A1A7F87A8D211715CBA9D267CA49C4DBFBBA42741CE3E3"
+  },
+  {
+    "path": "app\\ui\\icons\\comprimidia_icon_256.png",
+    "size": 62251,
+    "sha256": "4BD4E5A48CF57A0C0993FB9F3AB150819C1D7A7AED6EE0D54B15DF56912E2EDE"
+  },
+  {
+    "path": "app\\ui\\icons\\comprimidia_titlebar.ico",
+    "size": 109197,
+    "sha256": "E7885EF890441E1DDDEE5E3D537EE08F6350F51DCA6D32FC1526390F36B5A3BC"
+  },
+  {
+    "path": "app\\ui\\icons\\comprimidia.ico",
+    "size": 101846,
+    "sha256": "89B8FA574855071DE9A1A7F87A8D211715CBA9D267CA49C4DBFBBA42741CE3E3"
+  },
+  {
+    "path": "app\\ui\\icons\\folder_open_bold.svg",
+    "size": 355,
+    "sha256": "3C59F1A8F8CED6EE20EB7EE20697C4728E0AEDDDD61837D19B3EDBABC282A9D7"
+  },
+  {
+    "path": "app\\ui\\icons\\media_preview_chevron_down_dark.svg",
+    "size": 224,
+    "sha256": "3CB8DF629059D2B848A3FAD6C8B3CE0BB0EE4F849F961EE1391C4321BA65B35A"
+  },
+  {
+    "path": "app\\ui\\icons\\media_preview_chevron_down_light.svg",
+    "size": 224,
+    "sha256": "F01A0272C216D6245B926261550E2327983F12026C6738657CA5022DE8265D9A"
+  },
+  {
+    "path": "app\\ui\\icons\\play_outline.svg",
+    "size": 183,
+    "sha256": "366E9C4E274D27F7426E945B6C8BA39A69DFE9A6BE57E0C7C9B11C30F7AD8FA1"
+  },
+  {
+    "path": "app\\ui\\icons\\refresh_cw_outline.svg",
+    "size": 334,
+    "sha256": "77CFBD3A2D6BDCD2F663AE44FA58F991AF789EFB5D60D3BF710CDB4B97D858F1"
+  },
+  {
+    "path": "app\\ui\\icons\\settings_gear_outline.svg",
+    "size": 494,
+    "sha256": "CE0E4541DE24FCA24B14E83A1BCD9789081DA78A18C28ABCDCA3B9BED07A3424"
+  },
+  {
+    "path": "app\\ui\\icons\\vertical_dots.svg",
+    "size": 216,
+    "sha256": "5AD6E81E32BF1D722067C9BA512E6B0B9BD63D46CC76A20C0B4C71D8C8B5E33B"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\ancillary_dialogs.cpython-311.pyc",
+    "size": 37100,
+    "sha256": "8AFC6DDFA87971752C66F96CAF5BC3F90DBB79AA6E2BA0AE6669FA1C78EC73BA"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\app_preferences_dialog.cpython-311.pyc",
+    "size": 40701,
+    "sha256": "32EFBD1829A6A3346C8FB1DEC42AB0E58648F4A244F7D159CD4A6E0C21CA7E5A"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\app_shell.cpython-311.pyc",
+    "size": 93267,
+    "sha256": "442D8C86152C1EC8F9611A5C4CE5DB5F71D294FB9B7CE2B006C5367C6A94E423"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\assets.cpython-311.pyc",
+    "size": 416,
+    "sha256": "3C9FF36ADCD363B63ACCD270FDBA20F4CA28B28204CB024011E389D23B4B2A31"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\assisted_import_dialog.cpython-311.pyc",
+    "size": 87266,
+    "sha256": "68F6F213E117FE578EC5B3EBD88E5784D08D6383B858DA766D8B43B7728CFE1F"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\configuration_overlay.cpython-311.pyc",
+    "size": 26171,
+    "sha256": "B231C4F5B80AA69BE48F5ACE0E6BA9CA4D507C988E42C7CAF2519843D0CB3626"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\configuration_panel.cpython-311.pyc",
+    "size": 554925,
+    "sha256": "4121BC8DA18B890351274A5CC5D535E82C87D37C2CB8A7E6A9A22D0C0AA9AB88"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\context_bar_widget.cpython-311.pyc",
+    "size": 19901,
+    "sha256": "F38CD71FC50FBA654CE17CD1795E3BC8C3D9FB551F95BE8FA579BF5A5FE3E585"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\context_bar.cpython-311.pyc",
+    "size": 5574,
+    "sha256": "D830F3509D042EF1EDBCBBA6229F961D6AA42D211B1E4E95C56ADEE502CD91A1"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\dialog_caption.cpython-311.pyc",
+    "size": 5272,
+    "sha256": "AB6D11201D5D813783F65D36CB885A306AC3CDB28A660AFCF938B8AF2F681638"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\execution_footer.cpython-311.pyc",
+    "size": 6622,
+    "sha256": "2D74374D2CB3AA787894C148EF796BD6C0DFDDF21ECAB115AD043FA204283CE0"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\file_card_delegate.cpython-311.pyc",
+    "size": 72721,
+    "sha256": "EDBA4F9CEE77F42721D9E37F9E3993F86F3209224E9AC4BDA9A63B3A44735214"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\file_card_presenter.cpython-311.pyc",
+    "size": 23890,
+    "sha256": "DA6065DEE735A298D8B3CFE5B8683543D2966245DABC0845FAF591231D105B65"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\file_list_container.cpython-311.pyc",
+    "size": 46155,
+    "sha256": "FCB1D80E733A42219090C50DCDF2E4C004A315154E9145294D2412F58E29839D"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\file_list_model.cpython-311.pyc",
+    "size": 14126,
+    "sha256": "726ABCAAF1A5FF1F3819DBDCE4E2C40BE216D61D511A10F0D0D753BB5DE0EFE9"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\file_list.cpython-311.pyc",
+    "size": 51357,
+    "sha256": "93AB8C747CE088DEFFF63B105F6D68558A4A304A92C92E67BB1FDD29F9C6D34E"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\global_bar.cpython-311.pyc",
+    "size": 100807,
+    "sha256": "07BC9215B791985D0081D570F5DBDE7CEAF296C59786AD47418E6E4AC422FDA1"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\global_progress.cpython-311.pyc",
+    "size": 7966,
+    "sha256": "1357FF121D829B073F2AB239BFA8ECD620D0D6F07A958DFF60F8AED4F1F3E6F2"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\import_batch_worker.cpython-311.pyc",
+    "size": 5139,
+    "sha256": "D7ADBED8A41CFDB77C36BDD4539FDA5B968DFEE64DC95224C5AF4F5C7380DC8A"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\media_preview_dialog.cpython-311.pyc",
+    "size": 68577,
+    "sha256": "267EF9F0667F2BBEA8F1553FD44891D56D003E179D8EE1E6C6F22DE642C4B7CE"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\selection_controller.cpython-311.pyc",
+    "size": 3190,
+    "sha256": "51E640147AC26092506B692DBA3F9F00B5DA77E7099F65481A4B97492FE4966E"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\semantic_tooltip.cpython-311.pyc",
+    "size": 5638,
+    "sha256": "3BF480F8E91567FB4FA24C92F3DCBBD8CE229877371E691A3469F1047C79EFAF"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\startup_splash.cpython-311.pyc",
+    "size": 6925,
+    "sha256": "4A5CA95010261E49EB722C6316BA98583E7D617FED6DD807106A0BF06ECC0AB0"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\theme_mode_controller.cpython-311.pyc",
+    "size": 24473,
+    "sha256": "8BF1CAFE870F5C55EB4653C2A19E082502C041F886F70C0FAAC66E05115C9267"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\theme_tokens.cpython-311.pyc",
+    "size": 50801,
+    "sha256": "80F75133815BCB6158640B7CB6492E69087F3BA6822178ACDA875EE57A0F261B"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\toast_manager.cpython-311.pyc",
+    "size": 6321,
+    "sha256": "6CA97D5F7122832510C5C669DA6BC47DF2C1F56FA1344FF8C04275B71A33AD59"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\ui_palette.cpython-311.pyc",
+    "size": 2504,
+    "sha256": "B868E01960D8EEF5AAAB014575965FA3448D64F9C4A00D690060EFF0A927EE5F"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\ui_utils.cpython-311.pyc",
+    "size": 548,
+    "sha256": "B5660D87155248AC1A4429E25B3073CEFAFA8F96C0CFA6C154CC370F2A519951"
+  },
+  {
+    "path": "app\\ui\\__pycache__\\window_icon.cpython-311.pyc",
+    "size": 2532,
+    "sha256": "B68C15EDC1FD43B9E061CB0B20DAC407DB81EC83EBF4BAF50F4685DB765407CE"
+  },
+  {
+    "path": "app\\__pycache__\\__main__.cpython-311.pyc",
+    "size": 261,
+    "sha256": "ED4ECB6240C4D4BA3E3C911E2FE22E2C7F2E1BE2A429E5165059E4569ADBEC4C"
+  },
+  {
+    "path": "app\\__pycache__\\app_metadata.cpython-311.pyc",
+    "size": 228,
+    "sha256": "532610A0118FDEBF60E4177B6B8E8270D970FEBAF830E7BEF2EE5B45F00D7DC0"
+  },
+  {
+    "path": "app\\__pycache__\\application_context.cpython-311.pyc",
+    "size": 829,
+    "sha256": "0D6EB629CEE619E9FDFD5711F2CC0552D73F40B88F08F3D05BF2B304C8E00377"
+  },
+  {
+    "path": "app\\__pycache__\\main.cpython-311.pyc",
+    "size": 9284,
+    "sha256": "06D86B260B2E447E370783138099A24F0E9BC103C3E6F9565A7DAFB511A69E49"
+  },
+  {
+    "path": "tests\\test_active_product_identity.py",
+    "size": 4067,
+    "sha256": "CB7D4BF6777F5B61D4FEAB7599596E8831B7B5DD8482D7BC6A2DA820CE4E6AC4"
+  },
+  {
+    "path": "tests\\test_build_identity.py",
+    "size": 1412,
+    "sha256": "E709331EBF1AE2483B5DDCD06AA18F3C1540F136A090F9C86DF14116967CBC8F"
+  },
+  {
+    "path": "tests\\test_drag_drop_paths.py",
+    "size": 1787,
+    "sha256": "9CF962662C137213479EF86AA86569C89150124077F19C4F0A1B3A85591D3886"
+  },
+  {
+    "path": "tests\\test_ffmpeg_tooling.py",
+    "size": 3916,
+    "sha256": "E48275EF4F005DF0F346E6560B35C0006D86867349418ED88B6E806C2A609152"
+  },
+  {
+    "path": "tests\\test_global_bar_nudge_lifecycle.py",
+    "size": 1204,
+    "sha256": "FE9BE9C299B75434B7254E60E3621A776FFC9F2C1AC7BCC92068EE26C6382ED6"
+  },
+  {
+    "path": "tests\\test_import_directory_selection.py",
+    "size": 2044,
+    "sha256": "F5C963D65F33C07B3C5FF4468754CEE78A98E6DF7E7274828441FA571354B942"
+  },
+  {
+    "path": "tests\\test_installer_migration.py",
+    "size": 4102,
+    "sha256": "6743CCA6A3488704137C54B7CBCE95F662C3ABCF8C0F3BBFBA8363FC5858E049"
+  },
+  {
+    "path": "tests\\test_output_directory_creation.py",
+    "size": 1049,
+    "sha256": "123954923AFE4667345F44811558A36BF1F2393D950C1BA22CB70B012A91D290"
+  },
+  {
+    "path": "tests\\test_run_controller_shutdown.py",
+    "size": 2114,
+    "sha256": "73385A6BCAF9DC7F204210C25445980B78DD55FEA9950A0B5B067AA92F46678A"
+  },
+  {
+    "path": "tests\\test_runtime_identity.py",
+    "size": 4383,
+    "sha256": "0B626D85585A3BE240402754AAAF6966718D887BE6BFE4217E822FA4C59D4257"
+  },
+  {
+    "path": "tests\\test_startup_lifecycle.py",
+    "size": 576,
+    "sha256": "DEB4E5E7040668E2BEBE32F56C3404D7D5319916CF37D3F5CA59A55A5A7BD8B4"
+  },
+  {
+    "path": "tests\\test_user_data_migration.py",
+    "size": 12430,
+    "sha256": "975DFE2D15CA8437F07978998C356A2B12C6AAF4F74C7BF6A8EB2D26C59A9F6C"
+  },
+  {
+    "path": "tools\\build_shared_runtime_candidate.py",
+    "size": 2379,
+    "sha256": "C730A93206D31095FCB7657F63F69F3E042469B741A52DA1AC048DBA4C8AF554"
+  },
+  {
+    "path": "tools\\CandidateInstaller.nsi",
+    "size": 4429,
+    "sha256": "A88F1D5B5E0D0B6335C4817556C37020738095559BEA82B36426C75C3053357A"
+  },
+  {
+    "path": "tools\\ffmpeg_tooling.py",
+    "size": 3964,
+    "sha256": "5EF3DDE32AFF48CE8200060972A19D7BA7155EE586F946C380B14D2D0B82452C"
+  },
+  {
+    "path": "tools\\prepare_bundled_manifest.py",
+    "size": 1163,
+    "sha256": "243B7298F2A563B2ADB415013283C8A929BD5083AA6B5170F155E5641D1DF3C4"
+  },
+  {
+    "path": "tools\\prepare_candidate_installers.ps1",
+    "size": 1304,
+    "sha256": "3A03D3E437FE6F77313379B48F1952B8CC621FEBD666AE2D3CD1A0D32AB34EAA"
+  },
+  {
+    "path": "tools\\shared_media_runtime.py",
+    "size": 12955,
+    "sha256": "39DA2455C2BB91CC03703963B9ED20C92D9C550B471AAB333F1ECE87071DE906"
+  },
+  {
+    "path": "tools\\__pycache__\\build_shared_runtime_candidate.cpython-311.pyc",
+    "size": 4974,
+    "sha256": "D4452DE2D6D9B248DF9ED4A1B9D85781C1061D16D25BC0AA10F07D27781948D4"
+  },
+  {
+    "path": "tools\\__pycache__\\ffmpeg_tooling.cpython-311.pyc",
+    "size": 6833,
+    "sha256": "9B8792864D0CF152D08E40A39CD8083D1F7B0D08B92B7CD3F7C74821EC50C28A"
+  },
+  {
+    "path": "tools\\__pycache__\\shared_media_runtime.cpython-311.pyc",
+    "size": 17808,
+    "sha256": "30380BA78013A3B78F0295C051817A0B0587BFB62CB749C7A062DBBAAF65285A"
+  }
+]

@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+build/
+installer_output/
+*.log
+*.tmp
+.env
+.env.*
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

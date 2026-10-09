@@ -1,0 +1,16 @@
+{
+  "theme_mode": "system",
+  "assisted_import_default": true,
+  "auto_open_profile_settings_after_import": false,
+  "show_global_progress": true,
+  "confirm_delete": true,
+  "detailed_logging": false,
+  "auto_open_configuration_after_import": false,
+  "output_directory": "",
+  "use_source_directory": true,
+  "output_naming_mode": 1,
+  "output_suffix": "_compressed",
+  "output_filename_pattern": "{name}_compressed",
+  "collision_policy": 0,
+  "quick_profile_preset": 4
+}
